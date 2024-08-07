@@ -1,0 +1,19 @@
+/*
+In JavaScript Execution 
+   1. Global Execution Context-> this variable is used to refer it
+   2.Functional Execution Context
+   3.in mangoose (eval execution Context)
+
+   how it is executed->
+     it has 2 phase-
+        a) Memory Creation Phase ->memory is allocated to variables and function defination
+        b) Execution Phase
+    *) firstly in memory phase variables set to undefined and function has defination    
+    *) after memory phase, in execution phase variables are assigned with actual values and function is executed and
+      in function execution it creates new variable environment and execution thread.
+    *)in end the value being returned from function , is sent to Global Context
+
+
+   In Call Stack-> has LIFO concept
+
+*/
