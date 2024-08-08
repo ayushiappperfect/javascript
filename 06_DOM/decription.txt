@@ -1,0 +1,88 @@
+DOM => Document Object Model
+
+flow chart =>
+          Window=>Document=>HTML=> HEAD AND BODY
+          HEAD=> tilte(=> text Node) and meta(=>attribute)
+          Body=>for ex-> div =>(h1(=>text node and attribute ) 
+                           and p(textNode))
+
+
+some commands->
+    console.dir(document)
+    console.log(document)
+    console.log(Window)
+    console.log(Window.document)
+
+    console.log(document.links[0]) 
+    
+
+
+///////////DOM//////////////////////
+The W3C Document Object Model (DOM) is a platform
+    and language-neutral interface that allows programs 
+    and scripts to dynamically access and update the content,
+    structure, and style of a document.
+    For ex-
+     <script>
+        document.getElementById("demo").innerHTML = "Hello World!";
+      </script>
+The W3C DOM standard is separated into 3 different parts:
+
+    Core DOM - standard model for all document types
+    XML DOM - standard model for XML documents
+    HTML DOM - standard model for HTML documents
+
+The HTML DOM can be accessed with JavaScript (and with other programming languages).
+
+In the DOM, 
+    ->all HTML elements are defined as objects.
+    ->The programming interface is the properties and 
+    methods of each object.
+    ->A property is a value that you can get 
+    or set (like changing the content of an HTML element).
+    ->A method is an action you can do 
+    (like add or deleting an HTML element).
+
+
+
+examples->
+   const title=document.getElementById('title')
+   title.style.backgroundColor='green'
+   
+   
+   title.textContent =>it gives all content whether it is visible or hidden(it doesn't support Html Tags)
+   title.innerHTML => it gives all HTML value (i.e it also gives HTML TAGS involved)
+   title.innerText=> it gives only the visible text(it doesn't support Html Tags)
+
+    
+    document.querySelector('h2')
+    document.querySelector('#title') //id
+    document.querySelector('.heading')//class
+
+    //concept of NodeList => It basically gives the collections (it similar to aaray but not an array so dont have confusion)
+    const myH1=document.querySelectorAll('h1')
+    myH1.style.color="green"//will show even if you have only one element in NodeList
+    myH1[0].style.color="green"//will not show error
+    const myConverted=Array.from(myH1)
+    myConverted.forEach(function(li){
+        li.style.color='orange'
+    })
+
+
+
+//interesting//////
+    div.setAttribute("title","generated title")  //here it has only 1 round it only changes the content
+    div.innerText="chai aur code" //it basically first takes previous value that is present and then overwrites it  
+ 
+
+
+in creating_element.html ->
+     It is the structure of above element that is created=>
+      <div class="main" id="3" title="generated title"  
+      style="padding: 12px;">chai aur code</div> 
+
+
+
+The outerHTML property sets or returns
+the HTML element, including attributes, 
+start tag, and end tag.
