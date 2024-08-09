@@ -1,0 +1,26 @@
+An API, or Application Programming Interface, 
+is like a bridge that allows two different software systems 
+to communicate with each other.
+
+It defines a set of rules and protocols for 
+requesting and exchanging data.
+
+
+APIs can be used to retrieve information from external 
+sources, send data to external services, or perform 
+various other actions. 
+
+They are widely used in web development to access 
+data from various online services such as social media 
+platforms, weather data, financial information, and more.
+
+To make API requests in JavaScript, you 
+can use the fetch API, which is built into
+modern browsers. It is a promise-based API 
+that makes it easy to send HTTP requests and 
+handle responses asynchronously.
+
+
+Console.log and document is not a part of core Java Script . basically it is 
+injected by runtime environment into JavaScript.
+It is given in V8 Engine. V8 engine gives you debugging tools.
