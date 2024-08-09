@@ -23,3 +23,27 @@ Read File Sync              Read File Async
 
 
 See the flow of Async at your pc
+
+
+
+Async/await is syntactic sugar built on top of Promises,
+introduced in ES2017. 
+It allows writing asynchronous code in a synchronous manner, 
+making it easier to read and maintain.
+
+
+Key Characteristics of async/await=>
+Async Functions: An async function returns a Promise. 
+   It allows the use of the await keyword inside it.
+Await: The await keyword pauses the execution of the 
+  async function until the Promise is resolved or rejected.
+
+
+
+Error Handling in Async/Await:
+ For a successfully resolved promise, we use try and 
+  for rejected promise,
+  we use catch. To run a code after the promise has 
+  been handled using try or catch, we can .finally() method. 
+  The code inside .finally() method runs once regardless 
+  of the state of the promise.
