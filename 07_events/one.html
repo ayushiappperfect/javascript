@@ -20,7 +20,45 @@
 </body>
 <script>
     document.getElementById('owl').onclick=function(){
-        
+        alert("owl clicked again")
     }
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owl clicked again")},false)
+
+        //attachEvent()
+        //jquery
+    
+        // document.getElementById('owl').addEventListener('click',function(e){
+        //     console.log(e);
+        //     e.stopPropagation() //it will stop propogation like bubbling
+            
+        // },false)
+
+        // document.getElementById('google').addEventListener('click',function(e){
+        //     e.preventDefault();
+        //     e.stopPropagation() //it will stop propogation like bubbling
+        //     console.log("google clicked")
+        // },false)
+
+
+        // here false=> event Bubbling(bottom-up) and true=> event capturing(top-down)
+        //type, timeStamp, defaultPrevented
+        //target, toElement, currentTarget,
+        //clientX,clientY,screenX,screenY
+        //altKey, ctrlKey, shiftkey, KeyCode
+
+        document.querySelector('#images').addEventListener('click',function(e){
+            console.log(e.target.tagName);
+            if(e.target.tagName==='IMG'){
+                console.log(e.target.id);
+                let removeIt=e.target.parentNode
+                removeIt.remove()
+            }
+        })
+   
+        // removeIt.parentNode.removeChild(removeIt)
+
+
+        
 </script>
 </html>
