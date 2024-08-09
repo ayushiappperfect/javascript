@@ -1,0 +1,52 @@
+The Promise object represents the eventual completion 
+(or failure) of an asynchronous operation 
+and its resulting value.
+
+
+A Promise is a proxy for a value not necessarily known 
+when the promise is created. 
+It allows you to associate handlers with an asynchronous
+action's eventual success value or failure reason.
+
+This lets asynchronous methods return values like
+synchronous methods: instead of immediately returning 
+the final value, the asynchronous method returns a
+promise to supply the value at some point in the future.
+
+A Promise is in one of these states:
+
+pending: initial state, neither fulfilled nor rejected.
+
+fulfilled: meaning that the operation was
+          completed successfully.
+rejected: meaning that the operation failed.
+
+
+
+Promises are a way to handle asynchronous
+operations in JavaScript, providing a cleaner alternative
+to callback functions.
+A Promise represents a value that may be available now, 
+in the future, or never.
+
+Key Characteristics of Promises:
+    States: A Promise can be in one of three states:
+        Pending: Initial state, neither fulfilled nor rejected.
+        Fulfilled: Operation completed successfully.
+        Rejected: Operation failed.
+    Methods:
+        then(): Executes when the Promise is fulfilled.
+        catch(): Executes when the Promise is rejected.
+        finally(): Executes regardless of the Promise’s outcome.
+
+Error Handling of Promises: To handle a resolved promise, 
+use the .then() method, and for a rejected promise, 
+use .catch(). To execute code after promise handling, 
+use .finally(), ensuring the code within runs regardless of
+ the promise state.
+
+Example: During database server data retrieval, 
+a Promise remains pending until
+successful data reception (resolved state)
+or unsuccessful retrieval (rejected state).
+

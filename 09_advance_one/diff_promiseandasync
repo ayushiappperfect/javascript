@@ -1,0 +1,13 @@
+Asynchronous programming is fundamental in Node.js,
+ensuring non-blocking operations. 
+Promises and async/await are two key techniques
+for managing asynchronous code, each with distinct syntax.
+
+
+Promises use .then() and .catch() for
+handling asynchronous operations and chaining, 
+while async/await provides a more readable, 
+synchronous-like syntax for managing 
+asynchronous code with try/catch for error handling.
+
+
