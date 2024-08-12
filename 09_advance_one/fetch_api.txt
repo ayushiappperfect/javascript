@@ -21,3 +21,6 @@ The fetch() function returns a Promise which is fulfilled
  You can then check the request status and extract 
  the body of the response in various formats, including text 
 and JSON, by calling the appropriate method on the response.
+
+fetch() makes a GET request, but you can 
+use the method option to use a different request method.
